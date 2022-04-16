@@ -6,10 +6,14 @@ public class Main {
         alisher.init(fio, 0,0);
         alisher.enter();
         alisher.print();
-        Shop ashan = new Shop();
-        ashan.enter();
-        ashan.print();
-        ashan.cloak();
+        int N = 5;
+        Shop[] ashan = new Shop[N];
+        for (int i = 0; i < N; i++){
+            ashan[i] = new Shop();
+            ashan[i].enter();
+            ashan[i].print();
+            ashan[i].cloak();
+        }
         Warehouse home = new Warehouse();
         String[] x = {"ABS", "BSD", "DSE"};
         home.init(x, 7);
